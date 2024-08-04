@@ -1,10 +1,11 @@
 import React from 'react'
 import {Editor } from '@tinymce/tinymce-react';
 import {Controller } from 'react-hook-form';
+import conf from '../conf/conf';
 
 
 export default function RTE({name, control, label, defaultValue =""}) {
-  const apikey = "b5lmbc2ojbnarxe38czpx4sd6s7spzpf9960wrnyyhriskjh"
+  const apikey = conf.tinymceapikey
   return (
     <div className='w-full'> 
     {label && <label className='inline-block mb-1 pl-1'>{label}</label>}
